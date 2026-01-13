@@ -1,0 +1,299 @@
+<!--
+Alexandru Hadaruga, TST3, 3.1
+index.html (implicit romana)
+-->
+
+<!-- DOCTYPE pentru compatibilitate si standarde -->
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Alex Hădărugă</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Fancybox CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- "Skip to content" pentru navigare cu tastatura -->
+<a class="skip-link" href="#main-content">Sari la conținut</a>
+
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top" aria-label="Navigație principală">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#acasa">Alex Hădărugă</a>
+
+        <!-- aria-controls / aria-expanded / aria-label -->
+		<!-- utile pentru accesibilitate, de exemplu pentru persoane care folosesc tastatura -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Deschide meniul de navigație">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#acasa">Acasă</a></li>
+                <li class="nav-item"><a class="nav-link" href="#despre">Despre mine</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portofoliu">Portofoliu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galerie">Galerie foto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#harta">Hartă</a></li>
+                <li class="nav-item"><a class="nav-link" href="#autoevaluare">Autoevaluare</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="d-flex gap-2" aria-label="Schimbare limbă">
+                <a class="btn btn-sm btn-primary lang-btn" href="index.html">RO</a>
+                <a class="btn btn-sm btn-light lang-btn" href="index_en.html">EN</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- id pentru tinta "skip-link" (Sari la conținut) -->
+<main id="main-content" class="py-5">
+    <div class="container">
+
+        <section id="acasa" class="mb-5">
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-4 col-lg-3 text-center">
+                    <img src="images/alex.jpg" alt="Fotografie profil"
+                         class="img-fluid rounded-circle shadow">
+                </div>
+
+                <div class="col-md-8 col-lg-9">
+                    <h1>Bun venit pe site-ul meu!</h1>
+                    <p>Mă numesc <strong>Alex Hădărugă</strong> și sunt student. Aici găsești câteva informații despre mine.</p>
+                    <p>Acest site este realizat ca proiect la disciplina <strong>Tehnologii Multimedia</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="despre" class="mb-5">
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <h2>Despre mine</h2>
+                    <p>Sunt student în anul IV la Facultatea de Electronică, Telecomunicații și Tehnologii Informaționale din cadrul Universității Politehnica Timișoara. Sunt pasionat de telecomunicatii, electronică, și dezvoltare software. Acest site prezintă pe scurt proiectele și interesele mele profesionale.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Interese</h3>
+                    <ul>
+                        <li>Înot</li>
+                        <li>Muzică</li>
+                        <li>Telecomunicații și protocoale</li>
+                        <li>Proiecte IoT</li>
+                        <li>Electronică și circuite</li>
+                        <li>Microcontrolere</li>
+                        <li>Programare</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+<section id="portofoliu" class="mb-5">
+    <h2>Portofoliu</h2>
+
+    <!-- 2 niveluri de informație
+         Nivel 1 = descriere scurtă
+         Nivel 2 = detalii extinse) -->
+    <div class="mb-4">
+        <!-- NIVEL 1 -->
+        <p class="mb-2">
+            <strong>1. Proiectarea și realizarea practică a unui PCB (UPT)</strong><br>
+            <strong>Sumar:</strong> Am proiectat o placă PCB pornind de la schema bloc, apoi am realizat proiectul fizic.</p>
+
+        <!-- NIVEL 2 -->
+        <details>
+            <summary><strong>Click pentru detalii:</strong> Pași, rezultate și ce am învățat.</summary>
+            <div class="mt-2">
+                <ul class="mb-2">
+                    <li><strong>Schemă:</strong> organizare conexiuni, denumiri clare, verificare înainte de realizare fizică.</li>
+                    <li><strong>PCB:</strong> plasare logică a componentelor, trasee corecte, verificare distanțe.</li>
+                    <li><strong>Export:</strong> fișiere pentru fabricație + listă de componente (BOM) și documentație.</li>
+                    <li><strong>Implementare fizică:</strong> experiență practică în asamblare.</li>
+                </ul>
+                 <p class="mb-0">
+                    Link extern util:
+                    <a href="https://upt.ro/" target="_blank" rel="noopener noreferrer">UPT – site oficial</a>
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <div>
+        <!-- NIVEL 1 -->
+        <p class="mb-2">
+            <strong>2. Smart Agriculture: Monitorizare video & Sistem automat de irigare (Nokia)</strong><br>
+            <strong>Sumar:</strong> Sistem demonstrativ pentru agricultură inteligentă: monitorizare video + irigare automată</p>
+
+        <!-- NIVEL 2 -->
+        <details>
+            <summary><strong>Click pentru detalii:</strong> arhitectură și scenarii</summary>
+            <div class="mt-2">
+                <ul class="mb-2">
+                    <li><strong>Control de la distanță:</strong> totul poate fi controlat prin telefon.</li>
+                    <li><strong>Intrări:</strong> senzori umiditate.</li>
+                    <li><strong>Ieșiri:</strong> comandă actuator (releu)</li>
+                    <li><strong>Video:</strong> ajută la monitorizarea vizuală a mediului și a funcționării.</li>
+                </ul>
+                <p class="mb-0">
+                    Link extern util:
+                    <a href="https://www.nokia.com/" target="_blank" rel="noopener noreferrer">Nokia – site oficial</a>
+                </p>
+            </div>
+        </details>
+    </div>
+</section>
+
+
+        <section id="galerie" class="mb-5">
+            <h2>Galerie foto</h2>
+            <p>Mai jos sunt câteva imagini realizate de mine:</p>
+
+            <div class="row g-3 mt-3">
+                <div class="col-6 col-md-3">
+                    <a data-fancybox="galerie" href="images/galerie1.jpg">
+                        <img src="images/galerie1.jpg" class="img-fluid rounded shadow-sm" alt="Proiect 1 - imagine 1">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a data-fancybox="galerie" href="images/galerie2.jpg">
+                        <img src="images/galerie2.jpg" class="img-fluid rounded shadow-sm" alt="Proiect 1 - imagine 2">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a data-fancybox="galerie" href="images/galerie3.jpg">
+                        <img src="images/galerie3.jpg" class="img-fluid rounded shadow-sm" alt="Proiect 2 - imagine 1">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a data-fancybox="galerie" href="images/galerie4.jpg">
+                        <img src="images/galerie4.jpg" class="img-fluid rounded shadow-sm" alt="Proiect 2 - imagine 2">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="mb-5">
+            <h2>Video</h2>
+            <p>Videoclip integrat de pe YouTube.</p>
+            <p>B.U.G. Mafia - Cu Talpile Arse (feat. Jasmine) (Prod. Tata Vlad)</p>
+
+            <!-- container responsive (Bootstrap) -->
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.youtube.com/embed/KK0bZUr1buo?si=Io_kOaH2SYix8Ckf"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    style="border:0;">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="harta" class="mb-5">
+            <h2>Hartă</h2>
+            <p>Hartă integrată (Google Maps).</p>
+            <p>Adresa Facultății de Electronică, Telecomunicații și Tehnologii Informaționale din cadrul UPT.</p>
+
+            <!-- container responsive (Bootstrap) -->
+            <div class="ratio ratio-21x9">
+                <iframe
+                    src="https://maps.google.com/maps?q=Facultatea%20de%20Electronic%C4%83%2C%20Telecomunica%C8%9Bii%20%C8%99i%20Tehnologii%20Informa%C8%9Bionale%20Universitatea%20Politehnica%20Timisoara&t=&z=17&ie=UTF8&iwloc=near&output=embed"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Hartă Google Maps">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="autoevaluare" class="mb-5">
+            <h2>Autoevaluare</h2>
+
+            <ul class="mb-0">
+                <li>✅ Site-ul trebuie sa fie in limba romana si in limba engleza.</li>
+                <li>✅ 2 niveluri de informație (pe o anumita zona)</li>
+                <li>✅ Interacțiune - link-uri interne și link externe la alte site-uri</li>
+                <li>✅ Elemente obligatorii pentru nota minima: grafica, text, poze–imagini (galerie foto), video, animație, integrare de plugin-uri</li>
+                <li>✅ Design</li>
+                <li>✅ Grafica (poze - prelucrate și adaptate, galerie foto JQuery), informație text vizibilă și corectă</li>
+                <li>✅ Galerie foto (JQuery), cu imagini personale prelucrate într-un editor de imagini - Gimp, Photoshop: redimensionare, salvare pentru web, etc</li>
+                <li>✅ Partea de stilizare a paginii se va face în totalitate dintr-un fișier CSS extern - <strong>style.css</strong></li>
+                <li>✅ <strong>index.html</strong> este pagina de home - OBLIGATORIU!</li>
+                <li>✅ Integrare plugin-uri externe (harta-obligatoriu + optional: Facebook, Twitter, sau altceva)</li>
+                <li>✅ Integrarea unui videoclip (YouTube sau altceva)</li>
+                <li>✅ Respectarea condițiilor de accesibilitate - <a href="https://www.w3.org/WAI/WCAG20/quickref/" target="_blank" rel="noopener noreferrer">WCAG 2.0 Quick Reference (W3C)</a></li>
+                <li>✅ Respectarea criteriilor responsive web design (site-ul va fi responsive)</li>
+                <li>✅ Dimensiunea maxima pentru site (cu tot cu imagini) este de 10MB!</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:alexandru.hadaruga@student.upt.ro">alexandru.hadaruga@student.upt.ro</a></p>
+        </section>
+
+    </div>
+</main>
+
+<footer class="footer py-4">
+    <div class="container text-center">
+        <div class="mb-3">
+            <!-- MODIFICAT (Accesibilitate + securitate): rel noopener noreferrer la linkuri target=_blank -->
+            <a href="https://www.facebook.com/AlexHadaruga" target="_blank" rel="noopener noreferrer" class="mx-2" aria-label="Facebook">
+                <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/alexandruhadaruga" target="_blank" rel="noopener noreferrer" class="mx-2" aria-label="Instagram">
+                <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+        </div>
+        <small>Copyright &copy; Alex Hădărugă. All rights reserved. Partial AI-assisted.</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Incarcare bilbioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Incarcare script Fancybox, galerie interactiva -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<!-- Initializare plugin Fancybox -->
+<script>
+    Fancybox.bind("[data-fancybox='galerie']", {
+        Thumbs: {
+            autoStart: true,
+        }
+    });
+</script>
+
+</body>
+</html>
